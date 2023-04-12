@@ -4,3 +4,5 @@
 
 
 > saiba quando seu boost vai upar
+
+![proof](https://github.com/yogurtd3vil/info-boost/raw/main/proof.png)
