@@ -6,6 +6,8 @@ const diff = moment().diff(boostData, 'weeks');
 const boostCalc = boostData.clone().add(boost(diff), 'months');
 const boostMS = boostCalc.diff(moment(), true);
 const boostinfo = moment.duration(boostMS);
+const unixTimestamp = Math.floor(boostCalc.valueOf() / 1000); // unix <t:${unixTimestamp}:R>
+
 
 console.log(`faltam ${boostinfo.months()} meses, ${boostinfo.days()} dias e ${boostinfo.hours()} horas para o próximo up`); //tempo restante
 console.log(`irá upar em: ${boostCalc.format("D [de] MMMM [de] YYYY [às] HH:mm")}`); //data exata
